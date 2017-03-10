@@ -21,4 +21,13 @@ public class TestPda{
     assertEquals(4, pda.max(4,1));
   }
 
+  @Test
+  public void testLooper(){
+    assertEquals(10, pda.looper());
+  }
+
+  @Test
+  public void testcheckLoop(){
+    assertEquals("looper passed", pda.checkLoop());
+  }
 }
